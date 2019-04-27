@@ -1,0 +1,50 @@
+.currencyForm {
+    display: flex;
+    flex-direction: column;
+    padding: $s-size;
+    padding-bottom: 0;
+    padding-top: 2rem;
+}
+
+.currencyForm-error {
+  color: $off-white;
+  font-style: italic;
+  margin: $m-size 0 0 0;
+  padding: 0 $m-size;
+}
+
+.currencyForm__input {
+    background: $off-white;
+    border: none;
+    border-bottom: .1rem solid darken($color: $dark-blue, $amount: 10);
+    color: black;
+    font-weight: bold;
+    flex-grow: 1;
+    margin: 0 0 0 0;
+    padding: $s-size;
+    height: 1.9rem;
+}
+
+.currencyForm__date {
+  background: $off-white;
+    border: none;
+    border-bottom: .1rem solid darken($color: $dark-blue, $amount: 10);
+    color: black;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    padding: $s-size;
+    height: .9rem;
+    width: 35%;
+}
+
+@media (min-width: $desktop-breakpoint) { // apply these styles at a minimum width of 45rem
+  * {
+    .currencyForm {
+        flex-direction: row;
+    }
+
+    .currencyForm__input {
+        margin: 0 $s-size 0 0;
+    }
+  }
+}

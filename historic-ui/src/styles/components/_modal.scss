@@ -1,0 +1,49 @@
+.ReactModalPortal > div { // target class ReactModalPortal direct descendants as opposed to children of children
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity 200ms ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: $light-blue;
+  color: white;
+  max-width: 50rem; // wrap it, preventing it from expanding the box if the option is very long
+  outline: none;
+  padding: $xl-size;
+  padding-bottom: .2rem;
+  max-height: 50rem;
+  text-align: center;
+}
+
+.modal__title {
+  margin: 0 0 $m-size 0;
+}
+
+.modal__body {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 0 $l-size 0;
+  word-break: break-all;
+}
+
+.modal-body {
+  overflow-x: auto;
+}
+
+.col-currency {
+  column-width: 100%;
+  column-span: all;
+}

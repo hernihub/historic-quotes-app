@@ -1,0 +1,20 @@
+.resulttableClass {
+    border: 1px solid white;
+    border-width: 1px;
+    border-spacing: 2px;
+    border-style: outset;
+    text-align: center;
+}
+
+.resulttableClass .currency {
+    background-color: black;
+}
+
+th {
+    border: 1px solid $purple;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid $purple;
+}
