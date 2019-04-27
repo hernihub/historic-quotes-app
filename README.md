@@ -9,11 +9,11 @@ This is the github repository for the coding test part of the application proces
    It uses babel and webpack.
 This application will query on the quotes collection on MongoDB, as indicated in the file "NAB Coding challenge - Digital Forms.pdf", sent to me by the recruitment agency.
 
-IMPORTANT: for Windows machines, please execute FIRST the batch script **historic-quotes-api_winDev.bat** for starting the Node REST API, having git, mongoDB, node, npm and yarn installed. Then execute the second batch script **historic-quotes-ui_winDev.bat** to start the React app.
+**IMPORTANT**: for Windows machines, please execute FIRST the batch script **historic-quotes-api_winDev.bat** for starting the Node REST API, having git, mongoDB, node, npm and yarn installed. Then execute the second batch script **historic-quotes-ui_winDev.bat** to start the React app.
 
-IMPORTANT: for Linux machines, please execute **historic-quotes-ui_linuxDev.sh** for starting the app and nagivate to localhost:8080, having mongoDB, node, npm and yarn installed.
+**IMPORTANT**: for Linux machines, please execute **historic-quotes-ui_linuxDev.sh** for starting the app and nagivate to localhost:8080, having mongoDB, node, npm and yarn installed.
 
-IMPORTANT: AWS version
+**IMPORTANT**: AWS version
 For running this app on an AWS EC2 instance, go to your console, and launch an EC2 instance adding the script **ubuntuEC2_historic-quotes-app_userData.sh** in the user data field, wait for it to launch, and go to your public DNS.
 This script installs mongoDB, node, npm, yarn, nginx, configures nginx as reverse proxy for the React app, clones this repo and executes the app. Nevertheless, there is a caveat that I was not able to resolve during these 4 days that I dedicated to this project: there is a XHTML loop that tries to go to localhost:8080 from the UI and a CORS blocking from the Express server that I could not overcome, even though the right headers are set, as you can see on the quote router. Even so, this app would work perfectly on Heroku. I challenged myself to do this without much previous knowledge, and I think I did it quite nicely.
 
