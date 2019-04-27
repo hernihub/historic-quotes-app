@@ -27,3 +27,7 @@ Future improvements:
 What is lacking:
 1. Resolve the loopback of localhost:8080 with environment variables for hostname, on AWS
 2. Resolver the CORS blocking from Express at port 3000, on AWS
+
+
+
+*All civilizations become either spacefaring or extinct. - Carl Sagan, Pale Blue Dot*
