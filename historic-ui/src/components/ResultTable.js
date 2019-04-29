@@ -5,10 +5,17 @@ const ResultTable = (props) => {
     if(props.status === 404){        
         return (
             <div>
-              <p>No quotes for {props.quote.currency} and date {props.quote.date} </p>
+              <p>No quotes for {props.quote.currency} and date {parser.parseDateOrTime(props.quote.date, true)} </p>
             </div>
         );
     } else if (props.status === 200) {
+        if(props.quote.value < 0) {
+            return (
+                <div>
+                  <p>No profit for {props.quote.currency} and date {parser.parseDateOrTime(props.quote.date, true)} </p>
+                </div>
+            );
+        }
         return (
         <div className="">
             <table className="resulttableClass">
